@@ -7,4 +7,4 @@ $ ./install.sh
 ```
 
 ## How to add more configs?
-Just put a your configs inside **settings/custom_settings.hs** file.
+Just put a your configs inside **settings/custom_settings.sh** file.
