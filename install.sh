@@ -6,6 +6,7 @@
 main() {
     intro
     config_bashrc
+    add_custom_settings
     add_aliases
     source_bashrc
     finish
@@ -27,6 +28,18 @@ function config_bashrc() {
     sleep 3
     {
         cat ./settings/bash_formatter.sh >> ~/.bashrc
+    } && {
+        log "success" "Done!\n"
+    } || {
+        log "error" "Some problem has occurred :(\n"
+    }
+}
+
+function add_custom_settings() {
+    log "wait" "Adding custom settings"
+    sleep 3
+    {
+        cat ./settings/custom_settings.sh >> ~/.bashrc
     } && {
         log "success" "Done!\n"
     } || {
@@ -59,7 +72,7 @@ function source_bashrc() {
 }
 
 function finish() {
-    log "success" "So, I have done my job here!. I see you in your next computer :)\n"
+    log "success" "So, I have done my job here!. I see you in your next computer ;)\n"
     bash
 }
 
