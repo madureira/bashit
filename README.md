@@ -1,5 +1,6 @@
 # bashit
-My custom bash settings. This script will change the **~/.bashrc** file.
+My custom bash settings.
+This script will add some configurations into the **~/.bashrc** file.
 
 ## How to install?
 ```sh
@@ -7,4 +8,4 @@ $ ./install.sh
 ```
 
 ## How to add more configs?
-Just put a your configs inside **settings/custom_settings.sh** file.
+Just put your configs inside **settings/custom_settings.sh**.
